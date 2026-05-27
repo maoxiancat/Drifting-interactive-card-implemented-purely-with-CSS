@@ -1,0 +1,138 @@
+:root {
+    --x-o: 100px;
+    --y-o: 22px;
+    --x-m: 80px;
+    --y-m: 14px;
+    --x-i: 50px;
+    --y-i: 8px;
+}
+
+#text_box{
+    --x: 0px;
+    --y: 0px;
+    --mx: 0;
+    --my: 0;
+    --tx: calc(var(--x) * var(--mx));
+    --ty: calc(var(--y) * var(--my));
+    transform: translate(var(--tx), var(--ty));
+}
+
+#text_box:has(#o-div:hover){
+    --x: var(--x-o);
+    --y: var(--y-o);
+}
+
+#text_box:has(#m-div:hover){
+    --x: var(--x-m);
+    --y: var(--y-m);
+}
+
+#text_box:has(#i-div:hover){
+    --x: var(--x-i);
+    --y: var(--y-i);
+}
+
+#text_box:has(#t-div-0:hover){
+    --mx: -1;
+    --my: -1;
+}
+
+#text_box:has(#t-div-1:hover){
+    --mx: -0.66;
+    --my: -1;
+}
+
+#text_box:has(#t-div-2:hover){
+    --mx: -0.33;
+    --my: -1;
+}
+
+#text_box:has(#t-div-3:hover){
+    --mx: 0;
+    --my: -1;
+}
+
+#text_box:has(#t-div-4:hover){
+    --mx: 0.33;
+    --my: -1;
+}
+
+#text_box:has(#t-div-5:hover){
+    --mx: 0.66;
+    --my: -1;
+}
+
+#text_box:has(#t-div-6:hover){
+    --mx: 1;
+    --my: -1;
+}
+
+#text_box:has(#m-div-0:hover){
+    --mx: -1;
+    --my: -0.33;
+}
+
+#text_box:has(#m-div-1:hover){
+    --mx: -1;
+    --my: 0;
+}
+
+#text_box:has(#m-div-2:hover){
+    --mx: -1;
+    --my: 0.33;
+}
+
+#text_box:has(#m-div-3:hover){
+    --mx: 0;
+    --my: 0;
+}
+
+#text_box:has(#m-div-4:hover){
+    --mx: 1;
+    --my: -0.33;
+}
+
+#text_box:has(#m-div-5:hover){
+    --mx: 1;
+    --my: 0;
+}
+
+#text_box:has(#m-div-6:hover){
+    --mx: 1;
+    --my: 0.33;
+}
+
+#text_box:has(#b-div-0:hover){
+    --mx: -1;
+    --my: 1;
+}
+
+#text_box:has(#b-div-1:hover){
+    --mx: -0.66;
+    --my: 1;
+}
+
+#text_box:has(#b-div-2:hover){
+    --mx: -0.33;
+    --my: 1;
+}
+
+#text_box:has(#b-div-3:hover){
+    --mx: 0;
+    --my: 1;
+}
+
+#text_box:has(#b-div-4:hover){
+    --mx: 0.33;
+    --my: 1;
+}
+
+#text_box:has(#b-div-5:hover){
+    --mx: 0.66;
+    --my: 1;
+}
+
+#text_box:has(#b-div-6:hover){
+    --mx: 1;
+    --my: 1;
+}
